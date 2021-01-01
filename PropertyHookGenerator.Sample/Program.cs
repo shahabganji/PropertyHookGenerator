@@ -6,7 +6,7 @@ namespace PropertyHookGenerator.Sample
     {
         static void Main(string[] args)
         {
-            var student = new StudentViewModel();
+            var student = new StudentViewModel("Shahab");
             Console.WriteLine("Hello World!");
         }
     }

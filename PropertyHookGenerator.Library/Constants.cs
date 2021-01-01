@@ -2,10 +2,10 @@ namespace PropertyHookGenerator.Library
 {
     public sealed class Constants
     {
-        public const string DidSetAttribute = @"namespace PropertyHookGenerator.Library
+        public const string DidSetAttribute = @"
+using System;
+namespace PropertyHookGenerator.Library
 {
-    using System;
-    
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false , Inherited = false)]
     public sealed class DidSetAttribute : Attribute
     {
