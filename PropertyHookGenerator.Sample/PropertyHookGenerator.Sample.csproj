@@ -11,8 +11,7 @@
 
     <ItemGroup>
         <!--  this should be manually added to make the referenced project as an analyser            -->
-        <ProjectReference OutputItemType="Analyzer" 
-                          Include="..\PropertyHookGenerator.Library\PropertyHookGenerator.Library.csproj"/>
+        <ProjectReference OutputItemType="Analyzer" Include="..\PropertyHookGenerator.Library\PropertyHookGenerator.Library.csproj" />
     </ItemGroup>
-
+    
 </Project>

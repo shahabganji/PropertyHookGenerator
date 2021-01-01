@@ -4,6 +4,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyHookGenerator.Libra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyHookGenerator.Sample", "PropertyHookGenerator.Sample\PropertyHookGenerator.Sample.csproj", "{9BC7C63E-9C7E-4C9E-B658-5256FEE8DB9D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "compiler", "compiler", "{3E5874A4-F676-4E8B-8205-D1DE506B5381}"
+ProjectSection(SolutionItems) = preProject
+	csc.rsp = csc.rsp
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
