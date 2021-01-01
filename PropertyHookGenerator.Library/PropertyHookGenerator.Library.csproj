@@ -1,22 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+       
         <Version>1.0.0-alpha</Version>
         <PackageId>PropertyHook</PackageId>
         <LangVersion>latest</LangVersion>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+       
+<!--        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>-->
 
-        <!--   Nuget Package Analyzer     -->
-        <IncludeBuildOutput>false</IncludeBuildOutput>
-        
+<!--        &lt;!&ndash;   Nuget Package Analyzer     &ndash;&gt;-->
+<!--        <IncludeBuildOutput>false</IncludeBuildOutput>-->
     </PropertyGroup>
-    <PropertyGroup>
-        <RestoreAdditionalProjectSources>https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json ;$(RestoreAdditionalProjectSources)</RestoreAdditionalProjectSources>
-    </PropertyGroup>
-    <ItemGroup>
-        <!--   Nuget Package Analyser     -->
-        <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-    </ItemGroup>
+
     <ItemGroup>
         <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="3.8.0" PrivateAssets="all" />
         <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.2">
@@ -24,4 +19,13 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
     </ItemGroup>
+    
+    
+<!--    <PropertyGroup>-->
+<!--        <RestoreAdditionalProjectSources>https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json ;$(RestoreAdditionalProjectSources)</RestoreAdditionalProjectSources>-->
+<!--    </PropertyGroup>-->
+<!--    <ItemGroup>-->
+<!--        &lt;!&ndash;   Nuget Package Analyser     &ndash;&gt;-->
+<!--        <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />-->
+<!--    </ItemGroup>-->
 </Project>
